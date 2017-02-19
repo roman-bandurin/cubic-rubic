@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Кубик</title>
@@ -13,7 +13,7 @@
 			:focus 		{outline: 0;}
 
 			html { background-color: #000; }
-			
+
 			body {
 				margin: 0 auto;
 				font-family: Arial;
@@ -29,26 +29,26 @@
 				-webkit-touch-callout: none;
 				user-select: none;
 			}
-					
+
 			.cube {
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				width: 1px;
 				height: 1px;
-				
+
 				transform-style: preserve-3d;
 				transform-origin: 50% 50%;
-				transform: perspective(900px) scale(3, 3) rotate3d(1,1,0,-45deg);      
+				transform: perspective(900px) scale(3, 3) rotate3d(1,1,0,-45deg);
 			}
-			
+
 			.cube span {
 				position:absolute;
 				display: block;
 				/*visibility:hidden;*/
 				width: 50px;
 				height: 50px;
-				
+
 				box-shadow: inset 0 0 0px 2px #ddd, inset 0 0 5px rgba(255,255,255,0.3), inset -10px -10px 20px rgba(0,0,0,0.3);
 				/*box-shadow: inset 0px 25px 0px 0px #fff;*/
 				backface-visibility: hidden;
@@ -60,7 +60,7 @@
 				color:white;
 				cursor: default;
 			}
-			
+
 			.cube span.axis {
 				width:100px;
 				height:2px;
@@ -68,14 +68,14 @@
 				box-shadow:none;
 				backface-visibility: visible;
 			}
-			
+
 			.cube span.red     { background-color: #d00; }
 			.cube span.yellow  { background-color: #dd0; }
 			.cube span.magenta { background-color: #d6d; }
 			.cube span.blue    { background-color: #4bf; }
 			.cube span.cyan    { background-color: #0dd; }
 			.cube span.green   { background-color: #6a0; }
-			
+
 			.cube span.left.top { transform-origin: 75px 75px -75px; }
 			.cube span.left.middle { transform-origin: 75px 25px -75px; }
 			.cube span.left.bottom { transform-origin: 75px -25px -75px; }
@@ -85,7 +85,7 @@
 			.cube span.right.top { transform-origin: -25px 75px -75px; }
 			.cube span.right.middle { transform-origin: -25px 25px -75px; }
 			.cube span.right.bottom { transform-origin: -25px -25px -75px; }
-			
+
 			.cube span.front-side.left.top { transform: translate3d(-75px, -75px, 75px) }
 			.cube span.front-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateZ(90deg) }
 			.cube span.front-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateZ(180deg) }
@@ -122,7 +122,7 @@
 			.cube span.front-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateZ(90deg) }
 			.cube span.front-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateZ(180deg) }
 			.cube span.front-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateZ(270deg) }
-			
+
 			.cube span.back-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateX(180deg) }
 			.cube span.back-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateZ(270deg) rotateX(180deg) }
 			.cube span.back-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateZ(180deg) rotateX(180deg) }
@@ -159,7 +159,7 @@
 			.cube span.back-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateZ(270deg) rotateX(180deg) }
 			.cube span.back-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateZ(180deg) rotateX(180deg) }
 			.cube span.back-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateZ(90deg) rotateX(180deg) }
-			
+
 			.cube span.left-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) rotateX(180deg) }
 			.cube span.left-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
 			.cube span.left-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
@@ -196,7 +196,7 @@
 			.cube span.left-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
 			.cube span.left-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
 			.cube span.left-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
-			
+
 			.cube span.right-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) }
 			.cube span.right-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateX(90deg) rotateY(90deg) }
 			.cube span.right-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateX(180deg) rotateY(90deg) }
@@ -233,7 +233,7 @@
 			.cube span.right-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateX(90deg) rotateY(90deg) }
 			.cube span.right-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateX(180deg) rotateY(90deg) }
 			.cube span.right-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateX(270deg) rotateY(90deg) }
-			
+
 			.cube span.down-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateX(270deg) }
 			.cube span.down-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) rotateX(270deg) }
 			.cube span.down-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateY(180deg) rotateX(270deg) }
@@ -270,7 +270,7 @@
 			.cube span.down-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateY(90deg) rotateX(270deg) }
 			.cube span.down-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateY(180deg) rotateX(270deg) }
 			.cube span.down-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateY(270deg) rotateX(270deg) }
-			
+
 			.cube span.up-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateX(90deg) }
 			.cube span.up-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateY(270deg) rotateX(90deg) }
 			.cube span.up-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateY(180deg) rotateX(90deg) }
@@ -307,13 +307,13 @@
 			.cube span.up-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateY(270deg) rotateX(90deg) }
 			.cube span.up-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateY(180deg) rotateX(90deg) }
 			.cube span.up-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateY(90deg) rotateX(90deg) }
-			
+
 			.container{
 				display: flex;
 				flex-flow: column nowrap;
     			align-items: center;
 			}
-			
+
 			#history_table{
 				color: white;
 				text-align:center;
@@ -321,7 +321,7 @@
 				table-layout:fixed;
 				width:50px;
 			}
-			
+
 			#history_table tr td{
 				border:2px solid white;
 				width:50px;
@@ -329,12 +329,12 @@
 				transition:display 1s ease;
 				cursor:pointer;
 			}
-			
+
 			#history_table tr td.expected{
 				border:2px solid gray;
 				color:gray;
 			}
-			
+
 		</style>
 	</head>
 	<body>
@@ -347,281 +347,88 @@
 			<div style="width:700px; height:58px; border:1px solid white; overflow:hidden; margin-top:30px;">
 				<table id="history_table" align="right"><tr></tr></table>
 			</div>
-			
+
 			<div class="cube">
-			
+
 				<span class="green back-side left top" data-num="0"></span>
 				<span class="green back-side left middle" data-num="7"></span>
 				<span class="green back-side left bottom" data-num="6"></span>
-				
-				<span class="green back-side center top" data-num="1"></span>                
-				<span class="green back-side center middle" data-side="0"></span>                
+
+				<span class="green back-side center top" data-num="1"></span>
+				<span class="green back-side center middle" data-side="0"></span>
 				<span class="green back-side center bottom" data-num="5"></span>
-				
-				<span class="green back-side right top" data-num="2"></span>                
-				<span class="green back-side right middle" data-num="3"></span>                
+
+				<span class="green back-side right top" data-num="2"></span>
+				<span class="green back-side right middle" data-num="3"></span>
 				<span class="green back-side right bottom" data-num="4"></span>
-				
+
 				<span class="red front-side left top" data-num="8"></span>
 				<span class="red front-side left middle" data-num="15"></span>
 				<span class="red front-side left bottom" data-num="14"></span>
-				
+
 				<span class="red front-side center top" data-num="9"></span>
 				<span class="red front-side center middle" data-side="1"></span>
 				<span class="red front-side center bottom" data-num="13"></span>
-				
+
 				<span class="red front-side right top" data-num="10"></span>
 				<span class="red front-side right middle" data-num="11"></span>
 				<span class="red front-side right bottom" data-num="12"></span>
-				
+
 				<span class="blue left-side left top" data-num="16"></span>
 				<span class="blue left-side left middle" data-num="23"></span>
 				<span class="blue left-side left bottom" data-num="22"></span>
-				
+
 				<span class="blue left-side center top" data-num="17"></span>
 				<span class="blue left-side center middle" data-side="2"></span>
 				<span class="blue left-side center bottom" data-num="21"></span>
-				
+
 				<span class="blue left-side right top" data-num="18"></span>
 				<span class="blue left-side right middle" data-num="19"></span>
 				<span class="blue left-side right bottom" data-num="20"></span>
-				
+
 				<span class="yellow right-side left top" data-num="24"></span>
 				<span class="yellow right-side left middle" data-num="31"></span>
 				<span class="yellow right-side left bottom" data-num="30"></span>
-				
+
 				<span class="yellow right-side center top" data-num="25"></span>
 				<span class="yellow right-side center middle" data-side="3"></span>
 				<span class="yellow right-side center bottom" data-num="29"></span>
-				
+
 				<span class="yellow right-side right top" data-num="26"></span>
 				<span class="yellow right-side right middle" data-num="27"></span>
 				<span class="yellow right-side right bottom" data-num="28"></span>
-                
+
 				<span class="magenta down-side left top" data-num="32"></span>
 				<span class="magenta down-side left middle" data-num="39"></span>
 				<span class="magenta down-side left bottom" data-num="38"></span>
-				
+
 				<span class="magenta down-side center top" data-num="33"></span>
 				<span class="magenta down-side center middle" data-side="4"></span>
 				<span class="magenta down-side center bottom" data-num="37"></span>
-				
+
 				<span class="magenta down-side right top" data-num="34"></span>
 				<span class="magenta down-side right middle" data-num="35"></span>
 				<span class="magenta down-side right bottom" data-num="36"></span>
-				
+
 				<span class="cyan up-side left top" data-num="40"></span>
 				<span class="cyan up-side left middle" data-num="47"></span>
 				<span class="cyan up-side left bottom" data-num="46"></span>
-				
+
 				<span class="cyan up-side center top" data-num="41"></span>
 				<span class="cyan up-side center middle" data-side="5"></span>
 				<span class="cyan up-side center bottom" data-num="45"></span>
-				
+
 				<span class="cyan up-side right top" data-num="42"></span>
 				<span class="cyan up-side right middle" data-num="43"></span>
 				<span class="cyan up-side right bottom" data-num="44"></span>
-				
+
 			</div>
 		</div>
+		<script type="text/javascript" src="./lib/cubic-rubic.min.js"></script>
 		<script type="text/javascript">
 			"use strict";
-			
-			var module = (function (stdlib, env, heap) {
-				"use asm";
-				var ram = new stdlib.Uint8Array(heap);
-				
-				//ключ: 000 - цвет стороны и 000 квадрат этой стороны
-				//значение: 000 - сторона, 000 - квадрат, 00 - вращение квадрата
-				function init(){
-					var i = 0;
-					i = 0x30;
-					while(i){
-						i = (i - 1)>>>0;
-						ram[i] = i << 2;
-					}
-				}
-				
-				//функция обнаружила, что за сторону вращать ('задняя', 'фронтальная', 'левая', 'правая', 'нижняя', 'верхняя')
-				//+ старший бит стороны вращения (0 - по часовой стрелке, 1 - против)
-				//значение из ram: 000 - сторона, 000 - квадрат, 00 - вращение квадрата
-				function get_side(quad, dir) {
-					quad = quad|0;
-					dir = dir|0;
-					
-					var d1 = 0,	d0 = 0,
-					s2 = 0, s1 = 0,	s0 = 0,
-					q2 = 0,	q1 = 0,	q0 = 0,
-					need = 0, spin = 0, side = 0;
-					
-					quad = quad>>>0;
-					quad = ram[quad]>>>0;
-					spin = quad&3;
-					side = quad>>>5&7;
-					quad = quad>>>2&7;
-					
-					q2 = quad>>>2&1;
-					q1 = quad>>>1&1;
-					q0 = quad&1;
-					
-					d1 = dir>>>1&1;
-					d0 = dir&1;
-					
-					//нужно ли обрабатывать клик и поворачивать сторону
-					need = (q2 ^ d1 ^ d0 ^ (q1 & d0) ^ 1) & ~q0 & 1;
-					
-					spin = (spin & 3)>>>0;
-					quad = (quad + (spin << 1) & 7)>>>0;
-					dir = (dir + spin & 3)>>>0;
-					
-					q2 = quad>>>2&1;
-					q1 = quad>>>1&1;
-					q0 = quad&1;
-					
-					d1 = dir>>>1&1;
-					d0 = dir&1;
-					
-					//обновляем значения
-					spin = (~q2|d1) & (q2|~d1) & (~q1|d0) & (q1|~d0) & 1;
-					
-					dir = (~q2|d1) & (q2|~d1) & ~d0 & 1 | ((~q2|d1|d0) & (q2|~d1) & (q2|~d0) & (~q1|d1) & (q1|~d1) & 1)<<1;
-					
-					d1 = dir>>>1&1;
-					d0 = dir&1;
-					
-					s2 = side>>>2&1;
-					s1 = side>>>1&1;
-					s0 = side&1;
-					
-					//преобразования
-					spin = (spin & need) << 3;
-					need = ~(need | need<<1 | need<<2) & 7;
-					
-					//по данной стороне определяем сторону, которую нужно вращать
-					side = d1 ^ d0 ^ s2 ^ s0 ^ d0&s2 ^ d0&s1 ^ d0&s0 | (~s1&d0&1)<<1 | (~s2&~d0&1)<<2 | need | spin;
-					
-					return side|0;
-				}
-				
-				//по стороне вращения надо найти, какие кубики вращать
-				//сторона для поворота будет известна, по ней вращаем центральный кубик
-				//первые восемь квадратов - для вращения, остальные 12 - для перемещения
-				function rotate(side, is_rot){
-					//дана сторона
-					side = side|0;
-					is_rot = is_rot|0;
-					
-					var cur_ram = 0, i = 0, j = 0, k = 0,
-					cur_side = 0, cs2 = 0, cs1 = 0, cs0 = 0,
-					cur_quad = 0, cq2 = 0, cq1 = 0, cq0 = 0,
-					spin = 0, s2 = 0, s1 = 0, s0 = 0,
-					cur_dir = 0, cd1 = 0, cd0 = 0,
-					cur_rot = 0, cr1 = 0, cr0 = 0;
-					
-					spin = side>>>3&1;
-					side = side & 7;
-					is_rot = is_rot&1;
-					
-					s2 = side>>>2&1;
-					s1 = side>>>1&1;
-					s0 = side&1;
-					
-					//для каждого квадрата стороны
-					//значение из ram: 000 - сторона, 000 - квадрат, 00 - вращение квадрата
-					i = 0x30; j = j>>>0; k = k>>>0;
-					while(i){
-						i = (i - 1)>>>0;
-						cur_ram = ram[i]>>>0;
-						
-						cur_side = cur_ram>>>5;
-						
-						//найти квадраты стороны - поместить в начало
-						if((side|0) == (cur_side|0)){
-							
-							if(is_rot) ram[i] = cur_ram & 252 | (cur_ram + (spin<<1|1) & 3);
-							ram[j + 0x30|0] = i;
-							j = (j + 1)|0;
-							
-						//найти для стороны сверху квадраты, которые надо выделить - поместить в конец (000 - сторона, 00 - квадраты для выделения)
-						} else if(side&6 ^ cur_side&6){
-							
-							cs2 = cur_side>>>2&1;
-							cs1 = cur_side>>>1&1;
-							cs0 = cur_side&1;
-							
-							//получаем квадрат
-							cur_quad = cur_ram>>>2&7;
-							
-							cq2 = cur_quad>>>2&1;
-							cq1 = cur_quad>>>1&1;
-							cq0 = cur_quad&1;
-							
-							//получаем угол поворота
-							cur_rot = cur_ram&3;
-							
-							cr1 = cur_rot>>>1&1;
-							cr0 = cur_rot&1;
-							
-							//определение направления, в котором данная сторона находится по отношению к поворачиваемой
-							cd1 = ~(cs2&cs1) & ~(cs2&cs0&s0) & (~cs2|cs0|s0) & (cs2|cs1|s2|s1) & (cs2|cs0|~s1) & ~(cs1&cs0) & (cs1|cs0|~s2|~s0) & ~(cs0&s2&~s0) & ~(s2&s1) & 1;
-							cd0 = ~cs2 & ~(cs1&s1) & (cs1|s1) & (cs1|s2^1) & 1;
-							
-							cur_dir = cd0 | cd1<<1;
-							
-							//определение истинного положения квадрата
-							cur_quad = cq0 | (cq1 ^ cr0)<<1 | (cq1&cr0 ^ cq2 ^ cr1)<<2;
-							
-							//разложение истинного положения квадрата
-							cq2 = cur_quad>>>2&1;
-							cq1 = cur_quad>>>1&1;
-							cq0 = cur_quad&1;
-							
-							//определение квадратов для выделения
-							cr1 = ~(s2&s1) & ~(s2&s0&~cd1&cd0) & (s2|s1|s0|cd0^1) & ~(s1&s0) & (s1|s0|cd1^1) & (s1|cd0|cd1^1) & 1;
-							cr0 = ~s2&(s1|cd0);
-							
-							//сравнение направления, в котором находится истинное положение квадрата и направления квадратов для выделения для этой стороны
-							cur_dir = cr1 ^ cr0 ^ cq2 ^ cr0&cq1 ^ cq1&cq0 ^ cr1&cr0&cq0 ^ cr1&cq1&cq0 ^ cr0&cq2&cq0 ^ cr0&cq1&cq0 ^ cq2&cq1&cq0 ^ 1; //dir
-							
-							if(cur_dir){
-								ram[k + 0x38|0] = i;
-								k = (k + 1)|0;
-								if(is_rot){
-									//определение стороны перемещения //side
-									cur_side = s1 ^ cd1 ^ spin ^ s2&cd0 ^ s1&cd0 ^ s0&cd0 ^ s2&s1&cd1 ^ s2&s1&spin ^ s2&s1&s0&cd0 ^ 1 | (~s1&~cd0&1)<<1 | (~s2&cd0&1)<<2;
-									//перемещаем квадрат в эту сторону
-									cur_ram = (cur_ram & 31) | (cur_side<<5);
-									ram[i] = cur_ram;
-									
-									//изменяем направление, в котором данная сторона находится по отношению к поворачиваемой
-									cur_dir = cd0 ^ spin | (cd1 ^ cd0 & spin)<<1;
-									
-									cd1 = cur_dir>>>1&1;
-									cd0 = cur_dir&1;
-									
-									//опрделяем, как должен повернуться квадрат в данном направлении по отношению к поворачиваемой
-									cur_rot = s2 ^ s1 ^ 1 | ((s2 ^ s0 ^ cd1 ^ s2&cd1 ^ s2&cd0 ^ 1)&~s1)<<1&2;
-									//поворачиваем квадрат на этот угол
-									cur_rot = cur_ram + cur_rot & 3;
-									//применяем поворот
-									ram[i] = (cur_ram & 252) | cur_rot;
-								}
-							}
-						}
-					}
-					
-					return 1|0;
-				}
-				
-				function fetch(i){
-					i = i|0;
-					return ram[i]|0;
-				}
 
-				return {init:init, get_side:get_side, rotate:rotate, fetch:fetch}
-			})({Uint8Array:  Uint8Array}, null,	new ArrayBuffer(0x44/*0x10000*/));
-			
-			module.init();
+			cubic.init();
 			var dic = {
 				side2 : ['З', 'Ф', 'Л', 'П', 'Н', 'В', 0, '-'],
 				side : ['back-side', 'front-side', 'left-side', 'right-side', 'down-side', 'up-side'],
@@ -629,16 +436,16 @@
 				spin : ['', 'rot90', 'rot180', 'rot270']
 			}
 			var history_cube = [], persperctive_cube = [], progress = 0, str;
-			
+
 			function span_click(){
-			
+
 				var x = 0, y = 0, dir = 0, side;
-				
+
 				if(!event) var event = arguments[0];
-				
+
 				x = event.offsetX;
 				y = event.offsetY;
-				
+
 				//0 - инвертировать, 1 - вверх, 2 - вправо, 3 - вниз, 4 - влево
 				if(y <= 50 - x && y <= 25 && y <= x){
 					dir = 0;
@@ -649,22 +456,22 @@
 				} else if(x <= 25 && y >= x && y <= 50 - x) {
 					dir = 3;
 				}
-				
-				if(this.dataset.num != '') side = module.get_side(this.dataset.num, dir);
-				
+
+				if(this.dataset.num != '') side = cubic.get_side(this.dataset.num, dir);
+
 				if(side != 7){
-					
+
 					rotate(side);
-					
+
 					history_push(side);
-					
+
 					calc();
 
 					//document.querySelector('.container').childNodes[0].innerHTML = str;
 				}
-				
+
 			}
-			
+
 			function history_push(side){
 				if(!!persperctive_cube && !!persperctive_cube.length){ //бывают и конструктивные односложные решения
 					if(progress < persperctive_cube.length  && persperctive_cube.length !== 1 && (persperctive_cube[progress] === side || (!!persperctive_cube[progress + 1] && persperctive_cube[progress + 1] === (side^8) && persperctive_cube[progress] === (side^8)) || (!!persperctive_cube[progress - 1] && persperctive_cube[progress - 1] === (side&7)))){
@@ -687,7 +494,7 @@
 						history_cube.push(side);
 						history_table.rows[0].insertAdjacentHTML('beforeend', '<td>' + dic.side2[side&7] + (side&8 ? '\'' : '') + '</td>');
 						history_table.rows[0].lastElementChild.onclick = history_cube_element_click
-						
+
 						progress = 0;
 						persperctive_cube = null;
 					}
@@ -696,7 +503,7 @@
 					history_table.rows[0].insertAdjacentHTML('beforeend', '<td>' + dic.side2[side&7] + (side&8 ? '\'' : '') + '</td>');
 					history_table.rows[0].lastElementChild.onclick = history_cube_element_click
 				}
-				
+
 				//str = dic.side2[side&7] + (side&8 ? '\'' : '');
 				//str += '<br />' + progress;
 				str = 'История (длина ' + history_cube.length + '): ';
@@ -704,63 +511,63 @@
 					str += dic.side2[history_cube[i]&7] + (history_cube[i]&8 ? '\'' : '');
 				}
 			}
-			
+
 			function calc(){
 				var stack = new Array(48), s1 = true, s2 = true, s3 = true, s4 = true, s5 = true, s6 = true, s7 = true, s1_cnt = 0;
 				for(var i = 0; i < 48; i++){
-					stack[i] = module.fetch(i)>>>0;
+					stack[i] = cubic.fetch(i)>>>0;
 					//str += '<br />' + i + ': ' + stack[i] + ': ' + (stack[i]>>>5&7) + ', ' + (stack[i]>>>2&7) + ', ' + (stack[i]&3) + ' (на ' + ((stack[i]>>>2&56)+(((stack[i]>>>2&7)+((stack[i]&3)<<1))&7)) + ')';
 				}
-				
+
 				for(i of [9, 11, 13, 15]){
 					s1 = s1 && ((stack[i]>>>5&7) === 1);
 				}
-					
+
 				for(i of [9, 11, 13, 15, 23, 31, 33, 45]){
 					s2 = s2 && ((stack[i]>>>5&7) === (i>>>3&7) && (stack[i]>>>2&7) === (i&7) && (stack[i]&3) === 0);
 				}
-				
+
 				for(i of [8, 10, 12, 14, 16, 22, 24, 30, 32, 34, 44, 46]){
 					s3 = s3 && ((stack[i]>>>5&7) === (i>>>3&7) && (stack[i]>>>2&7) === (i&7) && (stack[i]&3) === 0);
 				}
-					
+
 				for(i of [17, 21, 25, 29, 35, 39, 43, 47]){
 					s4 = s4 && ((stack[i]>>>5&7) === (i>>>3&7) && (stack[i]>>>2&7) === (i&7) && (stack[i]&3) === 0);
 				}
-				
+
 				s5 = s5 && (stack[19] === 76 || stack[19] === 14);
 				s5 = s5 && (stack[27] === 108 || stack[27] === 12);
 				s5 = s5 && (stack[37] === 148 || stack[37] === 22);
 				s5 = s5 && (stack[41] === 164 || stack[41] === 6);
-				
+
 				for(i of [1, 3, 5, 7]){
 					s6 = s6 && ((stack[i]>>>5&7) === (i>>>3&7));
 				}
-				
+
 				if(!progress){
 					if(!s1){
-						
+
 						//с зада - повернуть дважды, если нужно, повернуть заднюю сторону
 						if(stack[ 9] ===  4) persperctive_cube = [0, 0, 5, 5];
 						if(stack[ 9] ===  5) persperctive_cube = [0, 5, 5];
 						if(stack[ 9] ===  6) persperctive_cube = [5, 5];
 						if(stack[ 9] ===  7) persperctive_cube = [8, 5, 5];
-						
+
 						if(stack[11] === 12) persperctive_cube = [3, 3];
 						if(stack[11] === 13) persperctive_cube = [8, 3, 3];
 						if(stack[11] === 14) persperctive_cube = [8, 8, 3, 3];
 						if(stack[11] === 15) persperctive_cube = [0, 3, 3];
-						
+
 						if(stack[13] === 20) persperctive_cube = [0, 0, 4, 4];
 						if(stack[13] === 21) persperctive_cube = [0, 4, 4];
 						if(stack[13] === 22) persperctive_cube = [4, 4];
 						if(stack[13] === 23) persperctive_cube = [8, 4, 4];
-						
+
 						if(stack[15] === 28) persperctive_cube = [2, 2];
 						if(stack[15] === 29) persperctive_cube = [8, 2, 2];
 						if(stack[15] === 30) persperctive_cube = [8, 8, 2, 2];
 						if(stack[15] === 31) persperctive_cube = [0, 2, 2];
-						
+
 						//сбоку - просто повернуть
 						if(stack[ 9] ===  70) persperctive_cube = [13];
 						if(stack[ 9] === 100) persperctive_cube = [ 5];
@@ -770,64 +577,64 @@
 						if(stack[13] === 116) persperctive_cube = [12];
 						if(stack[15] === 156) persperctive_cube = [10];
 						if(stack[15] === 188) persperctive_cube = [ 2];
-						
+
 						//0 - З, 1 - Ф, 2 - Л, 3 - П, 4 - Н, 5 - В
 						//8 - З', 9 - Ф', 10 - Л', 11 - П', 12 - Н', 13 - В'
 						//сбоку, но повернутый во фронтальную сторону - значит на фронтальной стороне ничего нет - поворачиваем
 						if(stack[ 9] ===  71) persperctive_cube = [10, 13];
 						if(stack[ 9] === 103) persperctive_cube = [ 3,  5];
-						
+
 						if(stack[11] === 173) persperctive_cube = [13, 11];
 						if(stack[11] === 143) persperctive_cube = [ 4,  3];
-						
+
 						if(stack[13] ===  85) persperctive_cube = [ 2,  4];
 						if(stack[13] === 117) persperctive_cube = [11, 12];
-						
+
 						if(stack[15] === 157) persperctive_cube = [12, 10];
 						if(stack[15] === 191) persperctive_cube = [ 5,  2];
-						
+
 						//сделать с другого бока этих сторон и в отдалении
 						/*if(stack[ 9] ===  68) persperctive_cube = [1, 1, 4, 9, 9];
 						if(stack[ 9] ===  69) persperctive_cube = [2, 5, 10];
-						
+
 						if(stack[ 9] === 101) persperctive_cube = [3, 5, 11];
 						if(stack[ 9] === 102) persperctive_cube = [1, 1, 12, 9, 9];
-						
+
 						if(stack[11] === 141) persperctive_cube = [12, 3, 4];
 						if(stack[11] === 142) persperctive_cube = [1, 1, 10, 9, 9]
-						
+
 						if(stack[11] === 174) persperctive_cube = [1, 1, 2, 9, 9];
 						if(stack[11] === 175) persperctive_cube = [5, 11, 13];
-						
-						if(stack[13] ===  84) persperctive_cube = [1, 1, 4, 9, 9]; 
+
+						if(stack[13] ===  84) persperctive_cube = [1, 1, 4, 9, 9];
 						if(stack[13] ===  87) persperctive_cube = [2, 4, 10];
-						
+
 						if(stack[13] === 118) persperctive_cube = [3, 4, 11];
 						if(stack[13] === 119) persperctive_cube = [1, 1, 12, 9, 9];
-						
+
 						if(stack[15] === 158) persperctive_cube = [4, 2, 10];
 						if(stack[15] === 159) persperctive_cube = [1, 1, 12, 9, 9];
-						
+
 						if(stack[15] === 189) persperctive_cube = [1, 1, 12, 9, 9];
 						if(stack[15] === 190) persperctive_cube = [5, 2, 13];*/
-						
+
 						//с той стороны, на которой квадрат расположен и на противоположной от нее так,
 						//что при повороте фронтальной стороны выполнем поворот и разворачиваем обратно
 						if(stack[ 9] === 133) persperctive_cube = [1,  3, 9];
 						if(stack[ 9] === 135) persperctive_cube = [9, 10, 1];
 						if(stack[ 9] === 165) persperctive_cube = [1, 11, 9];
 						if(stack[ 9] === 167) persperctive_cube = [9,  2, 1];
-						
+
 						if(stack[11] ===  77) persperctive_cube = [9, 13, 1];
 						if(stack[11] ===  79) persperctive_cube = [1,  4, 9];
 						if(stack[11] === 109) persperctive_cube = [1, 12, 1];
 						if(stack[11] === 111) persperctive_cube = [9,  5, 1];
-						
+
 						if(stack[13] === 149) persperctive_cube = [9, 10, 1];
 						if(stack[13] === 151) persperctive_cube = [9,  3, 1];
 						if(stack[13] === 181) persperctive_cube = [1,  2, 9];
 						if(stack[13] === 183) persperctive_cube = [9, 11, 1];
-						
+
 						if(stack[15] ===  93) persperctive_cube = [9,  4, 1];
 						if(stack[15] ===  95) persperctive_cube = [1, 13, 9];
 						if(stack[15] === 125) persperctive_cube = [1,  5, 9];
@@ -859,35 +666,35 @@
 						if((stack[10]>>>5&7) === 3 && (stack[44]>>>5&7) === 5 && (stack[24]>>>5&7) === 0) { str += "<br />поменяйте ПЗП'"; persperctive_cube = [3, 0, 11]; }
 						else if((stack[10]>>>5&7) === 5 && (stack[44]>>>5&7) === 0 && (stack[24]>>>5&7) === 3) { str += "<br />поменяйте В'З'В"; persperctive_cube = [13, 8, 5]; }
 						else if((stack[10]>>>5&7) === 0 && (stack[44]>>>5&7) === 3 && (stack[24]>>>5&7) === 5) { str += "<br />поменяйте ПЗ'П'З''ПЗП'"; persperctive_cube = [3, 8, 11, 0, 0, 3, 0, 11]; }
-						
+
 						else if((stack[12]>>>5&7) === 4 && (stack[30]>>>5&7) === 3 && (stack[34]>>>5&7) === 0) { str += "<br />Поменяйте НЗН'"; persperctive_cube = [4, 0, 12]; }
 						else if((stack[12]>>>5&7) === 3 && (stack[30]>>>5&7) === 0 && (stack[34]>>>5&7) === 4) { str += "<br />Поменяйте П'З'П"; persperctive_cube = [11, 8, 3]; }
 						else if((stack[12]>>>5&7) === 0 && (stack[30]>>>5&7) === 4 && (stack[34]>>>5&7) === 3) { str += "<br />Поменяйте НЗ'Н'З''НЗН'"; persperctive_cube = [4, 8, 12, 0, 0, 4, 0, 12]; }
-						
+
 						else if((stack[14]>>>5&7) === 2 && (stack[32]>>>5&7) === 4 && (stack[16]>>>5&7) === 0) { str += "<br />Поменяйте ЛЗЛ'"; persperctive_cube = [2, 0, 10]; }
 						else if((stack[14]>>>5&7) === 4 && (stack[32]>>>5&7) === 0 && (stack[16]>>>5&7) === 2) { str += "<br />Поменяйте Н'З'Н"; persperctive_cube = [12, 8, 4]; }
 						else if((stack[14]>>>5&7) === 0 && (stack[32]>>>5&7) === 2 && (stack[16]>>>5&7) === 4) { str += "<br />Поменяйте ЛЗ'Л'З''ЛЗЛ'"; persperctive_cube = [2, 8, 10, 0, 0, 2, 0, 10]; }
-						
+
 						else if((stack[8]>>>5&7) === 5 && (stack[22]>>>5&7) === 2 && (stack[46]>>>5&7) === 0) { str += "<br />Поменяйте ВЗВ'"; persperctive_cube = [5, 0, 13]; }
 						else if((stack[8]>>>5&7) === 2 && (stack[22]>>>5&7) === 0 && (stack[46]>>>5&7) === 5) { str += "<br />Поменяйте Л'З'Л"; persperctive_cube = [10, 8, 2]; }
 						else if((stack[8]>>>5&7) === 0 && (stack[22]>>>5&7) === 5 && (stack[46]>>>5&7) === 2) { str += "<br />Поменяйте ВЗ'В'З''ВЗВ'"; persperctive_cube = [5, 8, 13, 0, 0, 5, 0, 13]; }
 						//else if(((stack[8]>>>2&56)+(((stack[8]>>>2&7)+((stack[8]&3)<<1))&7)) === )
 						else if(!s3) { str += "<br />Покрутите верхнее основание"; persperctive_cube = [0]; };
-						
+
 						//если сверху нет красного, то найти красный в нижнем основании и вызволить его
-						
+
 					}
 					if(s1 && s2 && s3){
 							 if((stack[43]>>>5&7) === 5 && (stack[25]>>>5&7) === 0) { str += "<br />Поменяйте ЗПЗ'П'З'В'ЗВ"; persperctive_cube = [0, 3, 8, 11, 8, 13, 0, 5]; }
 						else if((stack[29]>>>5&7) === 3 && (stack[35]>>>5&7) === 0) { str += "<br />Поменяйте ЗНЗ'Н'З'П'ЗП"; persperctive_cube = [0, 4, 8, 12, 8, 11, 0, 3]; }
 						else if((stack[39]>>>5&7) === 4 && (stack[17]>>>5&7) === 0) { str += "<br />Поменяйте ЗЛЗ'Л'З'Н'ЗН"; persperctive_cube = [0, 2, 8, 10, 8, 12, 0, 4]; }
 						else if((stack[21]>>>5&7) === 2 && (stack[47]>>>5&7) === 0) { str += "<br />Поменяйте ЗВЗ'В'З'Л'ЗЛ"; persperctive_cube = [0, 5, 8, 13, 8, 10, 0, 2]; }
-						
+
 						else if((stack[47]>>>5&7) === 5 && (stack[21]>>>5&7) === 0) { str += "<br />Поменяйте З'Л'ЗЛЗВЗ'В'"; persperctive_cube = [8, 10, 0, 2, 0, 5, 8, 13]; }
 						else if((stack[25]>>>5&7) === 3 && (stack[43]>>>5&7) === 0) { str += "<br />Поменяйте З'В'ЗВЗПЗ'П'"; persperctive_cube = [8, 13, 0, 5, 0, 3, 8, 11]; }
 						else if((stack[35]>>>5&7) === 4 && (stack[29]>>>5&7) === 0) { str += "<br />Поменяйте З'П'ЗПЗНЗ'Н'"; persperctive_cube = [8, 11, 0, 3, 0, 4, 8, 12]; }
 						else if((stack[17]>>>5&7) === 2 && (stack[39]>>>5&7) === 0) { str += "<br />Поменяйте З'Н'ЗНЗЛЗ'Л'"; persperctive_cube = [8, 12, 0, 4, 0, 2, 8, 10]; }
-						
+
 						else if((stack[47]>>>5&7) === 2 && (stack[21]>>>5&7) === 5) { str += "<br />Поменяйте ВЗ'В'З'Л'ЗЛЗ'ВЗ'В'З'Л'ЗЛ'"; persperctive_cube = [5, 8, 13, 8, 10, 0, 2, 8, 5, 8, 13, 8, 10, 0, 2]; }
 						else if((stack[25]>>>5&7) === 5 && (stack[43]>>>5&7) === 3) { str += "<br />Поменяйте ПЗ'П'З'В'ЗВЗ'ПЗ'П'З'В'ЗВ";  persperctive_cube = [3, 8, 11, 8, 13, 0, 5, 8, 3, 8, 11, 8, 13, 0, 5]; }
 						else if((stack[35]>>>5&7) === 3 && (stack[29]>>>5&7) === 4) { str += "<br />Поменяйте НЗ'Н'З'П'ЗПЗ'НЗ'Н'З'П'ЗП";  persperctive_cube = [4, 8, 12, 8, 11, 0, 3, 8, 4, 8, 12, 8, 11, 0, 3]; }
@@ -902,7 +709,7 @@
 						else if((stack[37] ===  87 || stack[37] === 21) && (stack[19] === 141 || stack[19] === 15)) { str += "<br />Поменяйте ЗП'З''ПЗП'ЗП"; persperctive_cube = [0, 11, 0, 0, 3, 0, 11, 0, 3]; }
 						else if(!s5){ str += "<br />Покрутите верхнее основание"; persperctive_cube = [0]; }
 					}
-					
+
 					if(s1 && s2 && s3 && s4 && s5){
 						//0 - З, 1 - Ф, 2 - Л, 3 - П, 4 - Н, 5 - В
 						//8 - З', 9 - Ф', 10 - Л', 11 - П', 12 - Н', 13 - В'
@@ -912,22 +719,22 @@
 						else if(stack[37] === 21 && stack[19] === 15) { str += "<br />Поменяйте НЗФ'ПЗФ'ВЗФ'ЛЗФ'ЗНЗФ'ПЗФ'ВЗФ'ЛЗФ'"; persperctive_cube = [4, 0, 9, 3, 0, 9, 5, 0, 9, 2, 0, 9, 0, 4, 0, 9, 3, 0, 9, 5, 0, 9, 2, 0, 9]; }
 						else if(!s6){ str += "<br />Поменяйте НЗФ'ПЗФ'ВЗФ'ЛЗФ'ЗНЗФ'ПЗФ'ВЗФ'ЛЗФ'"; persperctive_cube = [4, 0, 9, 3, 0, 9, 5, 0, 9, 2, 0, 9, 0, 4, 0, 9, 3, 0, 9, 5, 0, 9, 2, 0, 9]; }
 					}
-					
+
 					if(s1 && s2 && s3 && s4 && s5 && s6){
 						//0 - З, 1 - Ф, 2 - Л, 3 - П, 4 - Н, 5 - В
 						//8 - З', 9 - Ф', 10 - Л', 11 - П', 12 - Н', 13 - В'
 						//str += "<br />Поменяйте П'Ф'Л'ФПФ'ЛФ"; persperctive_cube = [11, 9, 10, 1, 3, 9, 2, 1];
 					}
-					
+
 					if(!!persperctive_cube && !!persperctive_cube.length)
 					for(var i of persperctive_cube){
 						history_table.rows[0].insertAdjacentHTML('beforeend', '<td class="expected">' + dic.side2[i&7] + (i&8 ? '\'' : '') + '</td>');
 						history_table.rows[0].lastElementChild.onclick = history_cube_element_click;
 					}
 				}
-				
+
 				s2 &= s1; s3 &= s2; s4 &= s3; s5 &= s4; s6 &= s5; s7 &= s6;
-				
+
 				if(!s1) str += '<br />Соберите крест';
 				if(s1) str += '<br />Первая стадия пройдена';
 				if(s2) str += '<br />Вторая стадия пройдена';
@@ -936,9 +743,9 @@
 				if(s5) str += '<br />Пятая стадия пройдена';
 				if(s6) str += '<br />Шестая стадия пройдена';
 				if(s7) str += '<br />Седьмая стадия пройдена';
-				
+
 			}
-			
+
 			function history_cube_element_click(){
 				//история - массив пройденных шагов. номер ячейки - номер в массиве истории.
 				//есть переменная-номер текущего шага. при клике на элементы слева формируется последовательность
@@ -948,12 +755,12 @@
 				//если действуется не по плану, то придумать новый план, если по плану, то отображать прогресс.
 				//должен быть список допустимых действий, чтобы можно было выбрать, как повернуть.
 				var cellIndex = this.cellIndex, length = history_cube.length, side = 255;
-				
+
 				str = '';
-				
+
 				if(cellIndex < length){
 					//var str = 'Которые в списке ожидания ';
-					
+
 					if(!!persperctive_cube && !!persperctive_cube.length)
 					for(var i = persperctive_cube.length; i > progress; i--){
 						if(!!history_table.rows[0].lastElementChild){
@@ -962,11 +769,11 @@
 						}
 					}
 					//alert(str);
-					
+
 					progress = 0;
 					persperctive_cube = null;
 					//str = 'Которые в истории ';
-					
+
 					for(var i = length - 1; i > cellIndex; i--, length--){
 						side = history_cube[i] ^ 8;
 						//str += dic.side2[side&7] + (side&8 ? '\'' : '');
@@ -993,7 +800,7 @@
 						persperctive_cube = null;
 					}
 				}
-				
+
 				if(side != 255) str = dic.side2[side&7] + (side&8 ? '\'' : '');
 				//str += '<br />' + progress;
 				str += '<br />История (длина ' + history_cube.length + '): ';
@@ -1003,35 +810,35 @@
 				calc();
 				document.querySelector('.container').childNodes[0].innerHTML = str;
 			}
-			
+
 			function rotate(side){
 				var for_rotate = new Array(20), stack1 = new Array(20), stack2 = new Array(20);
-					
-				module.rotate(side, 0);
-				for(var i = 0; i < 20; i++) for_rotate[i] = module.fetch(i + 48)>>>0;
-				
-				for(var i = 0, j = for_rotate[i]; i < 20; i++, j = for_rotate[i]) stack1[i] = module.fetch(j);
-				
-				module.rotate(side, 1);
-				for(var i = 0, j = for_rotate[i]; i < 20; i++, j = for_rotate[i]) stack2[i] = module.fetch(j);
-				
+
+				cubic.rotate(side, 0);
+				for(var i = 0; i < 20; i++) for_rotate[i] = cubic.fetch(i + 48)>>>0;
+
+				for(var i = 0, j = for_rotate[i]; i < 20; i++, j = for_rotate[i]) stack1[i] = cubic.fetch(j);
+
+				cubic.rotate(side, 1);
+				for(var i = 0, j = for_rotate[i]; i < 20; i++, j = for_rotate[i]) stack2[i] = cubic.fetch(j);
+
 				for(var i = 0, obj = cubearray[j = for_rotate[i]]; i < 20; i++, j = for_rotate[i], obj = cubearray[j]){
 					if(i>>>3&3){
 						obj.classList.remove(dic.side[stack1[i]>>>5&7]);
 						obj.classList.add(dic.side[stack2[i]>>>5&7]);
 					}
-					
+
 					if(stack1[i]&3) obj.classList.remove(dic.spin[stack1[i]&3]);
 					if(stack2[i]&3) obj.classList.add(dic.spin[stack2[i]&3]);
 				}
-				
+
 				i = 48 + (side&7);
 				obj = cubearray[i];
-				
+
 				if(stack1[0]&3) obj.classList.remove(dic.spin[stack1[0]&3]);
 				if(stack2[0]&3) obj.classList.add(dic.spin[stack2[0]&3]);
 			}
-			
+
 		</script>
 		<script type="text/javascript">
 			"use strict";
@@ -1040,7 +847,7 @@
 			var width = document.documentElement.clientWidth / window.devicePixelRatio | 0;
 			var height = document.documentElement.clientHeight / window.devicePixelRatio | 0;
 			var cubearray = [];
-			
+
 			var phi = 0, theta = 0, zeta = 0, touchX = 0, touchY = 0;
 			function cubeRotate(dphi, dtheta, dzeta){
 				dphi = dphi | 0;
@@ -1053,14 +860,14 @@
 				zeta += dzeta;
 				cube.style.transform = 'perspective(900px) scale('+scale+', '+scale+') rotate3d(1,1,0,-45deg) rotate3d(1,0,0,'+theta+'deg) rotate3d(0,1,0,'+phi+'deg) rotate3d(0,0,1,'+zeta+'deg)';
 			}
-			
+
 			var i = container.childNodes.length | 0, obj = null;
 			while(i--){
 				obj = container.childNodes[i];
 				if(obj.nodeType === 3)
 					container.removeChild(obj);
 			}
-			
+
 			i = cube.childNodes.length | 0; obj = null;
 			while(i--){
 				obj = cube.childNodes[i];
@@ -1075,18 +882,18 @@
 						cubearray[obj.dataset.side|0 + 48] = obj;
 					}
 			}
-			
+
 			container.onmousemove = function(){
 				if(!event) var event = arguments[0];
 				if(event.which === 1) cubeRotate(event.movementX, -event.movementY, 0);
 			}
-			
+
 			container.ontouchstart = function(){
 				if(event === undefined) var event = arguments[0];
 				touchX = event.touches[0].pageX | 0;
 				touchY = event.touches[0].pageY | 0;
 			};
-			
+
 			container.ontouchmove = function(){
 				if(event === undefined) var event = arguments[0];
 				var dtx = (event.touches[0].pageX - touchX) | 0,
@@ -1095,9 +902,9 @@
 				touchY = event.touches[0].pageY | 0;
 				cubeRotate(dtx, -dty, 0);
 			};
-			
+
 			container.ontouchend = function(){ touchX = 0; touchY = 0; };
-			
+
 			document.onkeyup = function(){
 				if(event.keyIdentifier == 'Up') cubeRotate(0, 30, 0);
 				if(event.keyIdentifier == 'Right') cubeRotate(30, 0, 0);
@@ -1106,29 +913,29 @@
 				if(event.keyCode == 107) cubeRotate(0, 0, -30);
 				if(event.keyCode == 109) cubeRotate(0, 0, 30);
 			}
-			
+
 			function rotate_random(cnt){
-				var stack1 = new Array(48), stack2 = new Array(48);			
-				
-				for(var i = 0; i < 48; i++) stack1[i] = module.fetch(i);
-				
+				var stack1 = new Array(48), stack2 = new Array(48);
+
+				for(var i = 0; i < 48; i++) stack1[i] = cubic.fetch(i);
+
 				i = cnt; obj = null;
 				while(i--){
 					obj = Math.floor(Math.random() * 6) + Math.floor(Math.random() + 0.5) * 8;
-					module.rotate(obj, 1);
+					cubic.rotate(obj, 1);
 				}
-				
+
 				for(var i = 0, obj = cubearray[i]; i < 48; i++, obj = cubearray[i]){
-					stack2[i] = module.fetch(i);
-					
+					stack2[i] = cubic.fetch(i);
+
 					obj.classList.remove(dic.side[stack1[i]>>>5&7]);
 					obj.classList.add(dic.side[stack2[i]>>>5&7]);
-					
+
 					if(stack1[i]&3) obj.classList.remove(dic.spin[stack1[i]&3]);
 					if(stack2[i]&3) obj.classList.add(dic.spin[stack2[i]&3]);
 				}
 			}
-			
+
 			rotate_random(100);
 			cubeRotate(0, 0, 0);
 		</script>
