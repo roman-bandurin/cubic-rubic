@@ -1,0 +1,231 @@
+.cube span.left.top { transform-origin: 75px 75px -75px; }
+.cube span.left.middle { transform-origin: 75px 25px -75px; }
+.cube span.left.bottom { transform-origin: 75px -25px -75px; }
+.cube span.center.top { transform-origin: 25px 75px -75px; }
+.cube span.center.middle { transform-origin: 25px 25px -75px; }
+.cube span.center.bottom { transform-origin: 25px -25px -75px; }
+.cube span.right.top { transform-origin: -25px 75px -75px; }
+.cube span.right.middle { transform-origin: -25px 25px -75px; }
+.cube span.right.bottom { transform-origin: -25px -25px -75px; }
+
+.cube span.front-side.left.top { transform: translate3d(-75px, -75px, 75px) }
+.cube span.front-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateZ(90deg) }
+.cube span.front-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateZ(180deg) }
+.cube span.front-side.left.top.rot270 { transform: translate3d(-75px, -75px, 75px) rotateZ(270deg) }
+.cube span.front-side.left.middle { transform: translate3d(-75px, -25px, 75px) }
+.cube span.front-side.left.middle.rot90 { transform: translate3d(-75px, -25px, 75px) rotateZ(90deg) }
+.cube span.front-side.left.middle.rot180 { transform: translate3d(-75px, -25px, 75px) rotateZ(180deg) }
+.cube span.front-side.left.middle.rot270 { transform: translate3d(-75px, -25px, 75px) rotateZ(270deg) }
+.cube span.front-side.left.bottom { transform: translate3d(-75px, 25px, 75px) }
+.cube span.front-side.left.bottom.rot90 { transform: translate3d(-75px, 25px, 75px) rotateZ(90deg) }
+.cube span.front-side.left.bottom.rot180 { transform: translate3d(-75px, 25px, 75px) rotateZ(180deg) }
+.cube span.front-side.left.bottom.rot270 { transform: translate3d(-75px, 25px, 75px) rotateZ(270deg) }
+.cube span.front-side.center.top { transform: translate3d(-25px, -75px, 75px) }
+.cube span.front-side.center.top.rot90 { transform: translate3d(-25px, -75px, 75px) rotateZ(90deg) }
+.cube span.front-side.center.top.rot180 { transform: translate3d(-25px, -75px, 75px) rotateZ(180deg) }
+.cube span.front-side.center.top.rot270 { transform: translate3d(-25px, -75px, 75px) rotateZ(270deg) }
+.cube span.front-side.center.middle { transform: translate3d(-25px, -25px, 75px) }
+.cube span.front-side.center.middle.rot90 { transform: translate3d(-25px, -25px, 75px) rotateZ(90deg) }
+.cube span.front-side.center.middle.rot180 { transform: translate3d(-25px, -25px, 75px) rotateZ(180deg) }
+.cube span.front-side.center.middle.rot270 { transform: translate3d(-25px, -25px, 75px) rotateZ(270deg) }
+.cube span.front-side.center.bottom { transform: translate3d(-25px, 25px, 75px) }
+.cube span.front-side.center.bottom.rot90 { transform: translate3d(-25px, 25px, 75px) rotateZ(90deg) }
+.cube span.front-side.center.bottom.rot180 { transform: translate3d(-25px, 25px, 75px) rotateZ(180deg) }
+.cube span.front-side.center.bottom.rot270 { transform: translate3d(-25px, 25px, 75px) rotateZ(270deg) }
+.cube span.front-side.right.top { transform: translate3d(25px, -75px, 75px) }
+.cube span.front-side.right.top.rot90 { transform: translate3d(25px, -75px, 75px) rotateZ(90deg) }
+.cube span.front-side.right.top.rot180 { transform: translate3d(25px, -75px, 75px) rotateZ(180deg) }
+.cube span.front-side.right.top.rot270 { transform: translate3d(25px, -75px, 75px) rotateZ(270deg) }
+.cube span.front-side.right.middle { transform: translate3d(25px, -25px, 75px) }
+.cube span.front-side.right.middle.rot90 { transform: translate3d(25px, -25px, 75px) rotateZ(90deg) }
+.cube span.front-side.right.middle.rot180 { transform: translate3d(25px, -25px, 75px) rotateZ(180deg) }
+.cube span.front-side.right.middle.rot270 { transform: translate3d(25px, -25px, 75px) rotateZ(270deg) }
+.cube span.front-side.right.bottom { transform: translate3d(25px, 25px, 75px) }
+.cube span.front-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateZ(90deg) }
+.cube span.front-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateZ(180deg) }
+.cube span.front-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateZ(270deg) }
+
+.cube span.back-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateX(180deg) }
+.cube span.back-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.left.top.rot270 { transform: translate3d(-75px, -75px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.left.middle { transform: translate3d(-75px, -25px, 75px) rotateX(180deg) }
+.cube span.back-side.left.middle.rot90 { transform: translate3d(-75px, -25px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.left.middle.rot180 { transform: translate3d(-75px, -25px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.left.middle.rot270 { transform: translate3d(-75px, -25px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.left.bottom { transform: translate3d(-75px, 25px, 75px) rotateX(180deg) }
+.cube span.back-side.left.bottom.rot90 { transform: translate3d(-75px, 25px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.left.bottom.rot180 { transform: translate3d(-75px, 25px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.left.bottom.rot270 { transform: translate3d(-75px, 25px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.center.top { transform: translate3d(-25px, -75px, 75px) rotateX(180deg) }
+.cube span.back-side.center.top.rot90 { transform: translate3d(-25px, -75px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.center.top.rot180 { transform: translate3d(-25px, -75px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.center.top.rot270 { transform: translate3d(-25px, -75px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.center.middle { transform: translate3d(-25px, -25px, 75px) rotateX(180deg) }
+.cube span.back-side.center.middle.rot90 { transform: translate3d(-25px, -25px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.center.middle.rot180 { transform: translate3d(-25px, -25px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.center.middle.rot270 { transform: translate3d(-25px, -25px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.center.bottom { transform: translate3d(-25px, 25px, 75px) rotateX(180deg) }
+.cube span.back-side.center.bottom.rot90 { transform: translate3d(-25px, 25px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.center.bottom.rot180 { transform: translate3d(-25px, 25px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.center.bottom.rot270 { transform: translate3d(-25px, 25px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.right.top { transform: translate3d(25px, -75px, 75px) rotateX(180deg) }
+.cube span.back-side.right.top.rot90 { transform: translate3d(25px, -75px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.right.top.rot180 { transform: translate3d(25px, -75px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.right.top.rot270 { transform: translate3d(25px, -75px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.right.middle { transform: translate3d(25px, -25px, 75px) rotateX(180deg) }
+.cube span.back-side.right.middle.rot90 { transform: translate3d(25px, -25px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.right.middle.rot180 { transform: translate3d(25px, -25px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.right.middle.rot270 { transform: translate3d(25px, -25px, 75px) rotateZ(90deg) rotateX(180deg) }
+.cube span.back-side.right.bottom { transform: translate3d(25px, 25px, 75px) rotateX(180deg) }
+.cube span.back-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateZ(270deg) rotateX(180deg) }
+.cube span.back-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateZ(180deg) rotateX(180deg) }
+.cube span.back-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateZ(90deg) rotateX(180deg) }
+
+.cube span.left-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.top.rot270 { transform: translate3d(-75px, -75px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.middle { transform: translate3d(-75px, -25px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.middle.rot90 { transform: translate3d(-75px, -25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.middle.rot180 { transform: translate3d(-75px, -25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.middle.rot270 { transform: translate3d(-75px, -25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.bottom { transform: translate3d(-75px, 25px, 75px)  rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.bottom.rot90 { transform: translate3d(-75px, 25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.bottom.rot180 { transform: translate3d(-75px, 25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.left.bottom.rot270 { transform: translate3d(-75px, 25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.top { transform: translate3d(-25px, -75px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.top.rot90 { transform: translate3d(-25px, -75px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.top.rot180 { transform: translate3d(-25px, -75px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.top.rot270 { transform: translate3d(-25px, -75px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.middle { transform: translate3d(-25px, -25px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.middle.rot90 { transform: translate3d(-25px, -25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.middle.rot180 { transform: translate3d(-25px, -25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.middle.rot270 { transform: translate3d(-25px, -25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.bottom { transform: translate3d(-25px, 25px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.bottom.rot90 { transform: translate3d(-25px, 25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.bottom.rot180 { transform: translate3d(-25px, 25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.center.bottom.rot270 { transform: translate3d(-25px, 25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.top { transform: translate3d(25px, -75px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.top.rot90 { transform: translate3d(25px, -75px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.top.rot180 { transform: translate3d(25px, -75px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.top.rot270 { transform: translate3d(25px, -75px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.middle { transform: translate3d(25px, -25px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.middle.rot90 { transform: translate3d(25px, -25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.middle.rot180 { transform: translate3d(25px, -25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.middle.rot270 { transform: translate3d(25px, -25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.bottom { transform: translate3d(25px, 25px, 75px) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateX(270deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateX(180deg) rotateY(90deg) rotateX(180deg) }
+.cube span.left-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateX(90deg) rotateY(90deg) rotateX(180deg) }
+
+.cube span.right-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) }
+.cube span.right-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.left.top.rot270 { transform: translate3d(-75px, -75px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.left.middle { transform: translate3d(-75px, -25px, 75px) rotateY(90deg) }
+.cube span.right-side.left.middle.rot90 { transform: translate3d(-75px, -25px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.left.middle.rot180 { transform: translate3d(-75px, -25px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.left.middle.rot270 { transform: translate3d(-75px, -25px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.left.bottom { transform: translate3d(-75px, 25px, 75px) rotateY(90deg) }
+.cube span.right-side.left.bottom.rot90 { transform: translate3d(-75px, 25px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.left.bottom.rot180 { transform: translate3d(-75px, 25px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.left.bottom.rot270 { transform: translate3d(-75px, 25px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.center.top { transform: translate3d(-25px, -75px, 75px) rotateY(90deg) }
+.cube span.right-side.center.top.rot90 { transform: translate3d(-25px, -75px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.center.top.rot180 { transform: translate3d(-25px, -75px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.center.top.rot270 { transform: translate3d(-25px, -75px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.center.middle { transform: translate3d(-25px, -25px, 75px) rotateY(90deg) }
+.cube span.right-side.center.middle.rot90 { transform: translate3d(-25px, -25px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.center.middle.rot180 { transform: translate3d(-25px, -25px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.center.middle.rot270 { transform: translate3d(-25px, -25px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.center.bottom { transform: translate3d(-25px, 25px, 75px) rotateY(90deg) }
+.cube span.right-side.center.bottom.rot90 { transform: translate3d(-25px, 25px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.center.bottom.rot180 { transform: translate3d(-25px, 25px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.center.bottom.rot270 { transform: translate3d(-25px, 25px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.right.top { transform: translate3d(25px, -75px, 75px) rotateY(90deg) }
+.cube span.right-side.right.top.rot90 { transform: translate3d(25px, -75px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.right.top.rot180 { transform: translate3d(25px, -75px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.right.top.rot270 { transform: translate3d(25px, -75px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.right.middle { transform: translate3d(25px, -25px, 75px) rotateY(90deg) }
+.cube span.right-side.right.middle.rot90 { transform: translate3d(25px, -25px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.right.middle.rot180 { transform: translate3d(25px, -25px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.right.middle.rot270 { transform: translate3d(25px, -25px, 75px) rotateX(270deg) rotateY(90deg) }
+.cube span.right-side.right.bottom { transform: translate3d(25px, 25px, 75px) rotateY(90deg) }
+.cube span.right-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateX(90deg) rotateY(90deg) }
+.cube span.right-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateX(180deg) rotateY(90deg) }
+.cube span.right-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateX(270deg) rotateY(90deg) }
+
+.cube span.down-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateX(270deg) }
+.cube span.down-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.left.top.rot270 { transform: translate3d(-75px, -75px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.left.middle { transform: translate3d(-75px, -25px, 75px) rotateX(270deg) }
+.cube span.down-side.left.middle.rot90 { transform: translate3d(-75px, -25px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.left.middle.rot180 { transform: translate3d(-75px, -25px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.left.middle.rot270 { transform: translate3d(-75px, -25px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.left.bottom { transform: translate3d(-75px, 25px, 75px) rotateX(270deg) }
+.cube span.down-side.left.bottom.rot90 { transform: translate3d(-75px, 25px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.left.bottom.rot180 { transform: translate3d(-75px, 25px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.left.bottom.rot270 { transform: translate3d(-75px, 25px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.center.top { transform: translate3d(-25px, -75px, 75px) rotateX(270deg) }
+.cube span.down-side.center.top.rot90 { transform: translate3d(-25px, -75px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.center.top.rot180 { transform: translate3d(-25px, -75px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.center.top.rot270 { transform: translate3d(-25px, -75px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.center.middle { transform: translate3d(-25px, -25px, 75px) rotateX(270deg) }
+.cube span.down-side.center.middle.rot90 { transform: translate3d(-25px, -25px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.center.middle.rot180 { transform: translate3d(-25px, -25px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.center.middle.rot270 { transform: translate3d(-25px, -25px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.center.bottom { transform: translate3d(-25px, 25px, 75px) rotateX(270deg) }
+.cube span.down-side.center.bottom.rot90 { transform: translate3d(-25px, 25px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.center.bottom.rot180 { transform: translate3d(-25px, 25px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.center.bottom.rot270 { transform: translate3d(-25px, 25px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.right.top { transform: translate3d(25px, -75px, 75px) rotateX(270deg) }
+.cube span.down-side.right.top.rot90 { transform: translate3d(25px, -75px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.right.top.rot180 { transform: translate3d(25px, -75px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.right.top.rot270 { transform: translate3d(25px, -75px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.right.middle { transform: translate3d(25px, -25px, 75px) rotateX(270deg) }
+.cube span.down-side.right.middle.rot90 { transform: translate3d(25px, -25px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.right.middle.rot180 { transform: translate3d(25px, -25px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.right.middle.rot270 { transform: translate3d(25px, -25px, 75px) rotateY(270deg) rotateX(270deg) }
+.cube span.down-side.right.bottom { transform: translate3d(25px, 25px, 75px) rotateX(270deg) }
+.cube span.down-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateY(90deg) rotateX(270deg) }
+.cube span.down-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateY(180deg) rotateX(270deg) }
+.cube span.down-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateY(270deg) rotateX(270deg) }
+
+.cube span.up-side.left.top { transform: translate3d(-75px, -75px, 75px) rotateX(90deg) }
+.cube span.up-side.left.top.rot90 { transform: translate3d(-75px, -75px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.left.top.rot180 { transform: translate3d(-75px, -75px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.left.top.rot270 { transform: translate3d(-75px, -75px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.left.middle { transform: translate3d(-75px, -25px, 75px) rotateX(90deg) }
+.cube span.up-side.left.middle.rot90 { transform: translate3d(-75px, -25px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.left.middle.rot180 { transform: translate3d(-75px, -25px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.left.middle.rot270 { transform: translate3d(-75px, -25px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.left.bottom { transform: translate3d(-75px, 25px, 75px) rotateX(90deg) }
+.cube span.up-side.left.bottom.rot90 { transform: translate3d(-75px, 25px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.left.bottom.rot180 { transform: translate3d(-75px, 25px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.left.bottom.rot270 { transform: translate3d(-75px, 25px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.center.top { transform: translate3d(-25px, -75px, 75px) rotateX(90deg) }
+.cube span.up-side.center.top.rot90 { transform: translate3d(-25px, -75px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.center.top.rot180 { transform: translate3d(-25px, -75px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.center.top.rot270 { transform: translate3d(-25px, -75px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.center.middle { transform: translate3d(-25px, -25px, 75px) rotateX(90deg) }
+.cube span.up-side.center.middle.rot90 { transform: translate3d(-25px, -25px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.center.middle.rot180 { transform: translate3d(-25px, -25px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.center.middle.rot270 { transform: translate3d(-25px, -25px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.center.bottom { transform: translate3d(-25px, 25px, 75px) rotateX(90deg) }
+.cube span.up-side.center.bottom.rot90 { transform: translate3d(-25px, 25px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.center.bottom.rot180 { transform: translate3d(-25px, 25px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.center.bottom.rot270 { transform: translate3d(-25px, 25px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.right.top { transform: translate3d(25px, -75px, 75px) rotateX(90deg) }
+.cube span.up-side.right.top.rot90 { transform: translate3d(25px, -75px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.right.top.rot180 { transform: translate3d(25px, -75px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.right.top.rot270 { transform: translate3d(25px, -75px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.right.middle { transform: translate3d(25px, -25px, 75px) rotateX(90deg) }
+.cube span.up-side.right.middle.rot90 { transform: translate3d(25px, -25px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.right.middle.rot180 { transform: translate3d(25px, -25px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.right.middle.rot270 { transform: translate3d(25px, -25px, 75px) rotateY(90deg) rotateX(90deg) }
+.cube span.up-side.right.bottom { transform: translate3d(25px, 25px, 75px) rotateX(90deg) }
+.cube span.up-side.right.bottom.rot90 { transform: translate3d(25px, 25px, 75px) rotateY(270deg) rotateX(90deg) }
+.cube span.up-side.right.bottom.rot180 { transform: translate3d(25px, 25px, 75px) rotateY(180deg) rotateX(90deg) }
+.cube span.up-side.right.bottom.rot270 { transform: translate3d(25px, 25px, 75px) rotateY(90deg) rotateX(90deg) }
